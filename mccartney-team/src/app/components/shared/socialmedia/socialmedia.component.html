@@ -1,0 +1,12 @@
+<div>
+  <table style="color: antiquewhite; margin: 0 auto; font-size: x-small">
+    <tr>
+      <td><button pButton icon="pi pi-facebook" class="p-button-text" (click)="openFacebook()" *ngIf="this.constants.facebookUrl" style="color: antiquewhite;"></button></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><button pButton icon="pi pi-instagram" class="p-button-text" (click)="openInstagram()" *ngIf="this.constants.instagramUrl" style="color: antiquewhite;"></button></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><button pButton icon="pi pi-twitter" class="p-button-text" (click)="openTwitter()" *ngIf="this.constants.twitterUrl" style="color: antiquewhite;"></button></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </table>
+</div>

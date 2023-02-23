@@ -1,0 +1,77 @@
+<div class="propSearch">
+  <div class="grid grid-nogutter">
+    <div class="col-2"></div>
+    <div class="col-9">
+      <div class="grid grid-nogutter">
+        <div class="col-2" [hidden]="searchConfig.hideAddress">
+          <div>
+            <label for="address">ADDRESS</label>
+          </div>
+          <div style="width: 95%">
+            <input id="address" type="text" pInputText style="width: 100%" [(ngModel)]="searchParams.address">
+          </div>
+        </div>
+        <div class="col-2" [hidden]="searchConfig.hideCity">
+          <div>
+            <label for="city">CITY</label>
+          </div>
+          <div style="width: 95%">
+            <input id="city" type="text" pInputText style="width: 100%" [(ngModel)]="searchParams.city">
+          </div>
+        </div>
+        <div class="col" [hidden]="searchConfig.hideState">
+          <div>
+            <label for="state">STATE</label>
+          </div>
+          <div style="width: 95%">
+            <p-dropdown id="state" style="" placeholder="Any" [options]="stateList" [(ngModel)]="searchParams.state" optionLabel="name" optionValue="code"></p-dropdown>
+          </div>
+        </div>
+        <div class="col" [hidden]="searchConfig.hideDistrict">
+          <div>
+            <label for="district">SCHOOL DISTRICT</label>
+          </div>
+          <div style="width: 95%">
+            <p-dropdown id="district" style="" placeholder="Any" [options]="districtList" [(ngModel)]="searchParams.district" optionLabel="name" optionValue="code"></p-dropdown>
+          </div>
+        </div>
+        <div class="col" [hidden]="searchConfig.hideMinPrice">
+          <div>
+            <label for="minprice">MIN PRICE</label>
+          </div>
+          <div style="width: 95%">
+            <input id="minprice" type="text" pInputText [(ngModel)]="searchParams.minPrice">
+          </div>
+        </div>
+        <div class="col" [hidden]="searchConfig.hideMaxPrice">
+          <div>
+            <label for="maxprice">MAX PRICE</label>
+          </div>
+          <div style="width: 95%">
+            <input id="maxprice" type="text" pInputText [(ngModel)]="searchParams.maxPrice">
+          </div>
+        </div>
+        <div class="col" [hidden]="searchConfig.hideBeds">
+          <div>
+            <label for="beds">BEDS</label>
+          </div>
+          <div style="width: 95%">
+            <p-dropdown id="beds" placeholder="Any" [options]="bedList" [(ngModel)]="searchParams.beds" optionLabel="name" optionValue="code"></p-dropdown>
+          </div>
+        </div>
+        <div class="col" [hidden]="searchConfig.hideBaths">
+          <div>
+            <label for="baths">BATHS</label>
+          </div>
+          <div style="width: 95%">
+            <p-dropdown id="baths" placeholder="Any" [options]="bathList" [(ngModel)]="searchParams.baths" optionLabel="name" optionValue="code"></p-dropdown>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div> &nbsp;</div>
+      <div><button pButton type="button" label="SEARCH" class="p-button-outlined" style="color: antiquewhite" (click)="search()"></button></div>
+    </div>
+  </div>
+</div>

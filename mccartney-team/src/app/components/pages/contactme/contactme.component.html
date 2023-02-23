@@ -1,0 +1,57 @@
+<div class="pageHeader">
+  <img src="assets/test.png" style="width: 100%">
+</div>
+<div class="grid">
+  <div class="col-6 col-offset-3">
+    <div class="div-center">
+      <div style="text-align: center"><h1>THANK YOU FOR CONTACTING ME</h1>
+        <hr>
+      </div>
+      <div class="grid grid-nogutter">
+        <div class="col-10 col-offset-1">
+          <div>
+            <span>
+              <label for="fullname">Full Name</label>
+              <input id="fullname" type="text" pInputText style="width: 100%">
+            </span>
+            <br><br>
+          </div>
+          <div>
+            <span>
+              <label for="email">Email Address</label>
+              <input id="email" type="text" pInputText style="width: 100%">
+            </span>
+            <br><br>
+          </div>
+          <div>
+            <span>
+              <label for="phone">Telephone Number</label>
+              <input id="phone" type="text" pInputText style="width: 100%">
+            </span>
+            <br><br>
+          </div>
+          <div>
+            <span>
+              <label for="comments">Questions & Comments</label>
+              <textarea id="comments" rows="6" pInputTextarea style="width: 100%"></textarea>
+            </span>
+            <br><br>
+          </div>
+          <div>
+            <span style="width: 100%">
+              <p-captcha siteKey="6LfI1jgkAAAAAEPs7qDJcHn54xBfh28TshNYWnUG" (onResponse)="showResponse($event)"
+                         initCallback="loadCaptcha()"></p-captcha>
+            </span>
+            <br><br>
+          </div>
+          <div style="text-align: center;">
+            <button pButton type="button" label="SUBMIT" class="p-button-outlined" style="color: antiquewhite"></button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
