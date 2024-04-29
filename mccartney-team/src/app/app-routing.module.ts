@@ -11,6 +11,10 @@ import {OpenhousesComponent} from "./components/pages/openhouses/openhouses.comp
 import {BuyersComponent} from "./components/pages/buyers/buyers.component";
 import {SellersComponent} from "./components/pages/sellers/sellers.component";
 import {FinancingComponent} from "./components/pages/financing/financing.component";
+import {TestimonialsComponent} from "./components/pages/testimonials/testimonials.component";
+import {MortgageCalcComponent} from "./components/pages/mortgagecalc/mortgagecalc.component";
+import {StagingComponent} from "./components/pages/staging/staging.component";
+import {HomeValueComponent} from "./components/pages/homevalue/homevalue.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -25,6 +29,10 @@ const routes: Routes = [
   {path: 'buyer', component: BuyersComponent, pathMatch: 'full'},
   {path: 'seller', component: SellersComponent, pathMatch: 'full'},
   {path: 'financing', component: FinancingComponent, pathMatch: 'full'},
+  {path: 'testimonials', component: TestimonialsComponent, pathMatch: 'full'},
+  {path: 'staging', component: StagingComponent, pathMatch: 'full'},
+  {path: 'mortgagecalc', component: MortgageCalcComponent, pathMatch: 'full'},
+  {path: 'homevalue', component: HomeValueComponent, pathMatch: 'full'},
   {path: '**', component: HomepageComponent}
 ];
 

@@ -34,6 +34,10 @@ import {GalleriaModule} from 'primeng/galleria';
 import {TeamService} from "./components/common/team-service";
 import {TeamStore} from "./components/common/team-store";
 import {Constants} from "./components/common/constants";
+import { TestimonialsComponent } from './components/pages/testimonials/testimonials.component';
+import { StagingComponent } from './components/pages/staging/staging.component';
+import {MortgageCalcComponent} from './components/pages/mortgagecalc/mortgagecalc.component';
+import { HomeValueComponent } from './components/pages/homevalue/homevalue.component';
 
 
 @NgModule({
@@ -54,7 +58,11 @@ import {Constants} from "./components/common/constants";
     OpenhousesComponent,
     BuyersComponent,
     SellersComponent,
-    FinancingComponent
+    FinancingComponent,
+    TestimonialsComponent,
+    StagingComponent,
+    MortgageCalcComponent,
+    HomeValueComponent
   ],
   imports: [
     BrowserModule,

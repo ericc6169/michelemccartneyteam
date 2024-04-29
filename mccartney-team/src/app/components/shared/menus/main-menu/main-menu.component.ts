@@ -50,7 +50,7 @@ export class MainMenuComponent implements OnInit {
           },
           {
             label: 'MORTGAGE CALCULATOR',
-            routerLink: 'seller'
+            routerLink: 'mortgagecalc'
           }
         ]
       },
@@ -59,15 +59,15 @@ export class MainMenuComponent implements OnInit {
         items: [
           {
             label: 'SERVICES PROVIDED',
-            routerLink: 'buyer'
-          },
-          {
-            label: 'STAGING',
             routerLink: 'seller'
           },
           {
+            label: 'STAGING',
+            routerLink: 'staging'
+          },
+          {
             label: 'WHAT IS MY HOME WORTH',
-            routerLink: 'financing'
+            routerLink: 'homevalue'
           }
         ]
       },
@@ -77,11 +77,11 @@ export class MainMenuComponent implements OnInit {
       },
       {
         label: 'TESTIMONIALS',
-        routerLink: 'about'
+        routerLink: 'testimonials'
       },
       {
         label: 'NEWSLETTERS',
-        routerLink: 'about'
+        routerLink: 'news'
       },
       {
         label: 'CONTACT US',
